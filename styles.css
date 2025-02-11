@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    border-bottom: 3px solid #007BFF;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+nav ul li:first-child {
+    border-bottom: 3px solid #007BFF;
+}
+
+.sign-in {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid white;
+    display: inline-block;
+    animation: typing 2s steps(7, end) forwards, blink 0.5s infinite;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.icons img {
+    width: 80px;
+    height: auto;
+    animation: bounce 0.6s ease-in-out infinite alternate;
+}
+
+.icons img[src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"], 
+.icons img[src="https://pontia.tech/wp-content/uploads/2024/02/que-es-sql-1.jpg"] {
+    display: block;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    10% { width: 1ch; }
+    20% { width: 2ch; }
+    30% { width: 3ch; }
+    40% { width: 4ch; }
+    50% { width: 5ch; }
+    60% { width: 6ch; }
+    70% { width: 7ch; }
+    80% { width: 8ch; }
+    90% { width: 9ch; }
+    100% { width: 10ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+    100% { border-right: 4px solid white; }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
